@@ -1,5 +1,5 @@
 // Refactor following solution
-// Find key by value
+// Find key by value 
 
  const findKeyByValue  = (object, ...rest) => {
   for (const key in object) {
