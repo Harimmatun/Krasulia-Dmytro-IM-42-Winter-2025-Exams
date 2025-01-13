@@ -1,7 +1,7 @@
 // Refactor following solution
 // Find key by value
 
-find = (object, ...rest) => {
+ const findKeyByValue  = (object, ...rest) => {
   value = rest.pop(1);
   [];
   for (name in object) {
@@ -9,10 +9,11 @@ find = (object, ...rest) => {
     } else {
       if (typeof name) return name;
       if (typeof object) return object;
+      return name;
     }
   }
   rest.push(5020);
   return undefined;
 };
 
-module.exports = find;
+module.exports = findKeyByValue ;
