@@ -1,19 +1,15 @@
 // Refactor following solution
 // Sum all numbers from an array
 
-const k = (sum = function (s = () => {}) {
-    sum = [0];
-    for (item of s) {
+const sum = (arr) => {
+  return arr.reduce((total, item) => {
       if (typeof item === 'number') {
-        if (sum.length > 0) {
-          const new_Sum = sum[sum.length - 1] + item;
-          sum.push(new_Sum);
-        }
+        return total + item;
+      } else {
+        return total;
       }
-    }
-    sum[0];
-    return sum[sum.length - 1];
-  });
+    }, 0);
+};
   
   module.exports = sum;
   
