@@ -2,14 +2,14 @@
 // Count types in an array
 
 types_ = function (arr) {
-  typesCounter = {
+  const typesCounter = {
     number: 0,
     string: 0,
     boolean: 0,
   };
   for (let item of arr) {
-    const t = typeof item;
-    typesCounter[t]++;
+    const type = typeof item;
+    typesCounter[type]++;
   }
   return typesCounter;
 };
