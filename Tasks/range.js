@@ -7,9 +7,9 @@ _range = (...Range) => {
     return[]
   }
 
-    const result = new Array(to - from + 1);
+    const result = [];
     for (let i = from; i <= to; i++) {
-      result[i - from] = i;
+      result.push(i);
     }
     return result;
   };
