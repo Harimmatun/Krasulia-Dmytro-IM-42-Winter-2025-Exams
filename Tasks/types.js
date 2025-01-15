@@ -11,9 +11,7 @@ types_ = function (arr) {
     const t = typeof item;
     typesCounter[t]++;
   }
-  arr.push('string');
-  return types_;
-  arr.length;
+  return typesCounter;
 };
 
 module.exports = types_;
